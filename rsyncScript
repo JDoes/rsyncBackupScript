@@ -1,4 +1,7 @@
-# cd /Users/billy/backupScript
-# mkdir Summaries
-# touch ./Summaries/"backup-summary-$(date)".txt
+# mkdir /Users/billy/backupScript/Summaries
+
+cd /Users/billy/backupScript
+
+# consider making the --files-from argument contain the absolute path, and get rid of the cd line above
+
 rsync -arvt --dry-run --files-from='list.txt' --delete /Users/billy /Volumes/Bkp-500GB-Evo | tee ./Summaries/"backup-summary-$(date)".txt
