@@ -2,6 +2,8 @@
 
 rsync {options} {source} {destination}
 
+in the actual run of the backup script, dont forget to remove the --dry-run option.
+
 works on linux and mac
 
 It is recommended that you backup to an encrypted drive
