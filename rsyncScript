@@ -1,0 +1,4 @@
+# cd /Users/billy/backupScript
+# mkdir Summaries
+# touch ./Summaries/"backup-summary-$(date)".txt
+rsync -arvt --dry-run --files-from='list.txt' --delete /Users/billy /Volumes/Bkp-500GB-Evo | tee ./Summaries/"backup-summary-$(date)".txt
