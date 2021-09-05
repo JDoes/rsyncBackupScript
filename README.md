@@ -2,7 +2,7 @@
 
 rsync {options} {source} {destination}
 
-in the actual run of the backup script, dont forget to remove the --dry-run option.
+in the actual run of the rsync command, dont forget to remove the --dry-run option.
 
 works on linux and mac
 
